@@ -1,133 +1,93 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Tristan Raissa Zhafif shifu</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
 
-        body {
-            background-color: #f4f6f8;
-            color: #333;
-        }
+    body {
+        background-color: #f4f6f8;
+        color: #334155;
+    }
 
-        header {
-            background: #1e293b;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
+    header {
+        background: linear-gradient(135deg, #1e3a8a, #1e293b);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
 
-        header h1 {
-            font-size: 2.5em;
-        }
+    header h1 {
+        font-size: 2.5em;
+    }
 
-        header p {
-            margin-top: 10px;
-            font-size: 1.1em;
-            color: #cbd5e1;
-        }
+    header p {
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #bfdbfe;
+    }
 
-        section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    section {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
 
-        h2 {
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
+    h2 {
+        margin-bottom: 20px;
+        color: #1e3a8a;
+        position: relative;
+    }
 
-        .about {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
+    h2::after {
+        content: "";
+        width: 55px;
+        height: 4px;
+        background: #60a5fa;
+        display: block;
+        margin-top: 6px;
+        border-radius: 5px;
+    }
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+    .about {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        border-left: 5px solid #60a5fa;
+    }
 
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+        transition: 0.3s;
+        border-top: 4px solid #60a5fa;
+    }
 
-        .card h3 {
-            margin-bottom: 10px;
-            color: #0f172a;
-        }
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(96,165,250,0.35);
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-            color: #cbd5e1;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
+    .card h3 {
+        margin-bottom: 10px;
+        color: #1e3a8a;
+    }
 
-    <header>
-        <h1>Tristan Raissa Zhafif</h1>
-        <p>Siswa Teknik Jaringan Komputer dan Telekomunikasi | SMKS 1 Barunawati</p>
-    </header>
-
-    <section>
-        <h2>Tentang Saya</h2>
-        <div class="about">
-            <p>
-                Saya adalah siswa jurusan <b>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</b> 
-                dari <b>SMKS 1 Barunawati</b>.  
-                Saya memiliki minat dalam bidang jaringan komputer, perakitan perangkat keras, 
-                serta pengembangan website sederhana.
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Proyek yang Pernah Dikerjakan</h2>
-        <div class="projects">
-
-            <div class="card">
-                <h3>Merakit PC</h3>
-                <p>Melakukan perakitan komputer mulai dari pemasangan hardware hingga pengecekan fungsi sistem.</p>
-            </div>
-
-            <div class="card">
-                <h3>Instalasi Kabel Jaringan</h3>
-                <p>Membuat dan memasang kabel LAN (UTP), konfigurasi jaringan dasar, serta pengujian koneksi.</p>
-            </div>
-
-            <div class="card">
-                <h3>Membuat Website Sederhana</h3>
-                <p>Mengembangkan website sederhana menggunakan HTML dan CSS dengan tampilan rapi dan fungsional.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 | Portofolio Tristan Raissa Zhafif</p>
-    </footer>
-
-</body>
-</html>
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #1e293b;
+        color: #bfdbfe;
+        margin-top: 50px;
+    }
+</style>
